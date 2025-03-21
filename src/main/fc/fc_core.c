@@ -245,12 +245,12 @@ static void updateArmingStatus(void)
         }
 
         /* CHECK: Angle */
-        if (!STATE(SMALL_ANGLE)) {
-            ENABLE_ARMING_FLAG(ARMING_DISABLED_NOT_LEVEL);
-        }
-        else {
-            DISABLE_ARMING_FLAG(ARMING_DISABLED_NOT_LEVEL);
-        }
+        // if (!STATE(SMALL_ANGLE)) {
+        //     ENABLE_ARMING_FLAG(ARMING_DISABLED_NOT_LEVEL);
+        // }
+        // else {
+        //     DISABLE_ARMING_FLAG(ARMING_DISABLED_NOT_LEVEL);
+        // }
 
         /* CHECK: CPU load */
         if (isSystemOverloaded()) {
